@@ -68,6 +68,7 @@ fieldset.input {
   box-shadow: 0 0 3px lightsteelblue;
   width: 100%;
   filter: contrast(100%);
+  height: 2.5rem;
 }
 
 fieldset.input:hover,
