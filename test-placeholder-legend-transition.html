@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head>
+<title>Registration Form</title>
+<!-- <meta http-equiv="refresh" content="5"> -->
+<link href="titan-gradient.css" rel="stylesheet" />
+<link href="test-placeholder-legend-transition.css" rel="stylesheet" />
+
+
+</head><body class="q-shape">
+
+
+<div class="container">
+
+<div class="row">
+<form class="column" method="post" action="/user/new">
+  <fieldset class="input">
+    <input type="text" id="email" name="credentials[email]" placeholder=" " value="" />
+    <legend>Email</legend>
+  </fieldset>
+  <div class="row">
+  <fieldset class="input">
+    <input type="text" id="first-name" name="name[first]" placeholder=" " value="" />
+    <legend>First Name</legend>
+  </fieldset>
+  <fieldset class="input">
+    <input type="text" id="last-name" name="name[last]" placeholder=" " value="" />
+    <legend>Last Name</legend>
+  </fieldset>
+  </div>
+  <div class="row">
+    <fieldset class="input">
+      <input type="text" name="address[city]" placeholder=" " value="" />
+      <legend>City</legend>
+    </fieldset>
+    <fieldset class="input">
+      <input type="text" name="address[street]" placeholder=" " value="" />
+      <legend>Street</legend>
+    </fieldset>
+    <fieldset class="input">
+      <input type="number" name="address[number]" placeholder=" " value="" />
+      <legend>Number</legend>
+    </fieldset>
+    </div>
+  <fieldset class="input">
+    <input type="password" id="password" name="credentials[password]" placeholder=" " value="" />
+    <legend>Password</legend>
+  </fieldset>
+  <fieldset class="input">
+    <input type="password" id="password_second" name="credentials[password_second]" placeholder=" " value="" />
+    <legend>Repeat Password</legend>
+  </fieldset>
+
+  <div class="row">
+    <input type="reset"  role="button" />
+    <input type="submit"  role="button" />
+  </div>
+</form>
+</div>
+<div class="row">
+
+
+</div>
+
+</body></html>
