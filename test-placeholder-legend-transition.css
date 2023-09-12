@@ -6,7 +6,8 @@ body {
 body * {
   box-sizing: border-box;
   display: flex;
-  accent-color: #72a2d1;
+  accent-color: darkolivegreen;
+  line-height: normal;
 }
 .container {
   flex-flow: column;
@@ -27,19 +28,23 @@ body * {
   flex-flow: nowrap;
   gap: 1rem;
   align-items: center;
-  line-height: 2;
+  /* line-height: 2; */
   justify-content: center;
   width: 100%;
 }
 
 [role="button"] {
-  border: 0.1rem steelblue outset;
+  border: 0.1rem steelblue groove;
   border-radius: 0.25rem;
-  box-shadow: 0 0 3px lightsteelblue;
+  box-shadow: 0.1rem 0.1rem 0.1rem black;
   color: silver;
   background-color: dodgerblue;
-  /* text-align: center; */
+  /*! text-align: center; */
   justify-content: center;
+  height: 2.5rem;
+  text-shadow: 1px 1px darkslateblue;
+  font-weight: 300;
+  border: 0;
 }
 [role="button"]:active {
   border: 0.1rem steelblue inset;
@@ -50,25 +55,32 @@ body * {
 }
 
 input {
-  line-height: 3;
+  /* line-height: 3; */
   background: transparent;
   border: 0;
   outline: 0;
   /*! border-radius: 1.5rem; */
-  padding: 0 0.25rem;
+  /*! padding: 0.25rem 0.; */
   z-index: 1;
   width: inherit;
+  font-size: 1rem;
+  /*! padding: 0.5rem 0.5rem 0.25rem 0.5rem; */
+  padding-left: 0.5rem;
+  padding-right: 0.1rem;
+  text-shadow: 0.01rem 0.01rem silver;
 }
 
 fieldset.input {
   background: #b0c2d1;
   /*! border: 1px solid lavender; */
   border-radius: 0.5rem;
-  border: 1px solid dimgray;
-  box-shadow: 0 0 3px lightsteelblue;
+  border: 0;
+  /*! box-shadow: 0 0 3px lightsteelblue; */
   width: 100%;
   filter: contrast(100%);
   height: 2.5rem;
+  box-shadow: inset 0.1rem 0.16rem 0.1rem black, inset -0.1rem -0.1rem 0.0rem #224e719c;
+  padding: 0;
 }
 
 fieldset.input:hover,
@@ -81,13 +93,12 @@ fieldset.input:focus-within {
               font-size 0.25s;
   position: absolute;
   padding: 0 0.1rem;
-  background: dimgray;
   border-collapse: collapse;
   line-height: 1;
 }
 
 .input > input + legend {
-  transform: translate(0.25rem, 0.5rem);
+  transform: translate(0.25rem, 0.65rem);
   font-size: 1.25rem;
   font-weight: 300;
   color: dimgray;
@@ -105,4 +116,6 @@ fieldset.input:focus-within {
   font-weight: 500;
   border-bottom: 0;
   border-top: 0;
+  text-shadow: 0.01rem 0.01rem darkslateblue;
+  font-weight: 300;
 }
